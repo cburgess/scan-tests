@@ -1,0 +1,2 @@
+# We want an older version so we have vulnerabilities to evaluate
+FROM alpine:3.10.0

@@ -1,0 +1,2 @@
+# We want an older version so we have vulnerabilities to evaluate
+FROM photon:3.0-20190705
