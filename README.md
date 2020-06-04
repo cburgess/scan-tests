@@ -17,3 +17,8 @@ Images to be used to test container scanning.
 | --- | --- | --- |
 | [cfburgess/scan-tests:python](https://hub.docker.com/repository/docker/cfburgess/scan-tests) | [Dockerfile.python](https://github.com/cburgess/scan-tests/blob/master/Dockerfile.python) | Python 3.7.5-slim-buster image with older version of keystone installed via pip |
 | [cfburgess/scan-tests:go](https://hub.docker.com/repository/docker/cfburgess/scan-tests) | [Dockerfile.go](https://github.com/cburgess/scan-tests/blob/master/Dockerfile.go) | Scratch image with 2 different versions of etcd installed. etcd is built in multi-stage build steps using different version of go. Finally the go.mod and go.sum files are also preset in the final image. |
+
+# TODO
+- java image
+- node/npm image
+- ruby/gem image
