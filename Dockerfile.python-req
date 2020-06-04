@@ -6,4 +6,5 @@ RUN apt-get update \
 &&  dpkg -P build-essential \
 &&  apt auto-remove -y \
 &&  rm -rf /root/.cache \
-&&  rm -rf /var/lib/apt/lists/*
+&&  rm -rf /var/lib/apt/lists/* \
+&&  pip freeze > /requirements.txt
