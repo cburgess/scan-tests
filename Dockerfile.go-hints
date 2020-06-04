@@ -20,7 +20,9 @@ RUN wget https://github.com/etcd-io/etcd/archive/v3.4.9.tar.gz \
 
 FROM scratch
 WORKDIR /etcd_3.4.0
+COPY --from=etcd_3.4.0 /build/etcd-3.4.0/go.* /etcd_3.4.0/
 COPY --from=etcd_3.4.0 /build/etcd-3.4.0/bin/* /etcd_3.4.0/
 
 WORKDIR /etcd_3.4.9
+COPY --from=etcd_3.4.9 /build/etcd-3.4.9/go.* /etcd_3.4.9/
 COPY --from=etcd_3.4.9 /build/etcd-3.4.9/bin/* /etcd_3.4.9/
