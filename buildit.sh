@@ -6,4 +6,4 @@ docker build . -f Dockerfile.centos -t cfburgess/scan-tests:centos
 docker build . -f Dockerfile.alpine -t cfburgess/scan-tests:alpine
 docker build . -f Dockerfile.photon -t cfburgess/scan-tests:photon
 docker build . -f Dockerfile.fedora -t cfburgess/scan-tests:fedora
-
+docker build . -f Dockerfile.go -t cfburgess/scan-tests:go
